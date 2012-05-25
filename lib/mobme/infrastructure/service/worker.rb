@@ -18,7 +18,7 @@ module MobME::Infrastructure::Service
         logger.info "Starting #{self.class}.."
         work
       rescue StandardError => e
-        logger.err(e.backtrace.unshift(e.inspect).join("\n"))
+        logger.error(e.backtrace.unshift(e.inspect).join("\n"))
         raise
       end
     end

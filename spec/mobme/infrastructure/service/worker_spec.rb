@@ -22,7 +22,7 @@ describe DummyWorker do
 
   it "should log and re-raise any uncaught errors while running" do
     dummy_worker = DummyWorker.new
-    dummy_worker.logger.should_receive(:err)
+    dummy_worker.logger.should_receive(:error)
     lambda { dummy_worker.run }.should raise_error
   end
 
