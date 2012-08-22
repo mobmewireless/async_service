@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "ci_reporter"
   s.add_development_dependency "simplecov-rcov"
   
-  s.add_dependency "hiredis", "~> 0.3.1"
+  s.add_dependency "hiredis", "~> 0.4.5"
   s.add_dependency "redis", "~> 2.2.0"
   s.add_dependency "true_queue", "~> 0.9"
 
